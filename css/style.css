@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-color:#f7f0e7;
+    transition: .5s;
+}
+header{
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo{
+    font-size: 25px;
+    color: orange;
+}
+nav{
+    display: flex;
+    width: 230px;
+    justify-content: space-between;
+}
+nav li a{
+    font-size: 18px;
+    color: #3b3b3b;
+}
+
+.sun,
+.moon{
+    font-size: 20px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.sun{
+    display: none;
+}
+/* .head{
+    color: #3b3b3b;
+} */
+
+
+.hero{
+    width: 1000px;
+    margin: auto;
+    height: 80vh;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.wall{
+    width: 500px;
+    left: 100px;
+    height: 250px;
+    border: 5px solid rgb(29, 29, 29);
+    position: absolute;
+    bottom: 65px;
+    /* z-index: -1; */
+    -webkit-box-shadow: inset 0 20px 20px -20px rgba(102, 102, 102, 0.8);
+    -moz-box-shadow: inset 0 20px 20px -20px rgba(102, 102, 102, 0.8);
+    box-shadow: inset 0 20px 20px -20px rgba(102, 102, 102, 0.8);    
+}
+.roof{
+    position: absolute;
+    width: 530px;
+    height: 0px;
+    bottom: 225px;
+    z-index: 1;
+    left: 85px;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 200px solid rgb(45, 109, 117);
+}
+
+.window-1, .window-2{
+    width: 100px;
+    height: 110px;
+    border: 3px solid grey;
+    left: 200px;
+    position: absolute;
+    bottom: 40px;
+    transition: .7s;
+    /* background-color: #ffff0057; */
+}
+
+.line-1{
+    height: 5px;
+    width: 100%;
+    background-color: grey;
+    margin-top: 20px;
+}
+.line-2{
+    height: 80px;
+    width: 6px;
+    background-color: grey;
+    margin-left: 45px;
+}
+.window-2{
+    left: 330px;
+}
+
+
+.door{
+    height: 150px;
+    width: 70px;
+    background-color: rgb(110, 49, 49);
+    position: absolute;
+    bottom: 0;
+    left: 70px;
+}
+
+.tree{
+    position: absolute;
+    bottom: -30px;
+    right: 0px;
+    height: 400px;
+    width: 400px;
+    background: url(../img/forest.png) center no-repeat;
+}
+
+.land{
+    height: 70px;
+    width: 100%;
+    background-color: green;
+    position: absolute;
+    bottom: 0;
+}
+
+.sun-drow{
+    position: relative;
+    left: 820px;
+    top: 70px;
+    width: 120px;
+    animation: sun 1.6s;
+}
+.cloud-1{
+    position: relative;
+    left: 0px;
+    top: 100px;
+    width: 120px;
+    animation: cloud-1 1s;
+}
+.cloud-2{
+    position: relative;
+    left: 170px;
+    top: 50px;
+    width: 120px;
+    animation: cloud-2 1.5s;
+}
+
+@keyframes cloud-1{
+    from{top: 400px;}
+    to{top: 100px;}
+}
+@keyframes cloud-2{
+    from{top: 400px;}
+    to{top: 50px;}
+}
+@keyframes sun{
+    from{top: 700px;}
+    to{top: 70px;}
+}
+.moon-drow{
+    color: white;
+    position: relative;
+    animation: moon 1.6s;
+    left: 820px;
+    top: 60px;
+    font-size: 70px;
+    rotate: 10deg;
+}
+@keyframes moon{
+    from{top: 700px;}
+    to{top: 60px;}
+}
+
+.star1{
+    color: yellow;
+    position: relative;
+    animation: star1 .6s;
+    left: 70px;
+    top: 150px;
+    font-size: 30px;
+    rotate: 10deg;
+}
+
+.star2{
+    left: 200px;
+    top: 50px;
+    color: yellow;
+    position: relative;
+    animation: star2 .8s;
+    font-size: 30px;
+    rotate: 10deg;
+}
+.star3{
+    left: 300px;
+    top: 190px;
+    color: yellow;
+    position: relative;
+    animation: star3 1s;
+    font-size: 30px;
+    rotate: 10deg;
+}
+.star4{
+    left: 400px;
+    top: 100px;
+    color: yellow;
+    position: relative;
+    animation: star4 1.2s;
+    font-size: 30px;
+    rotate: 10deg;
+}
+.star5{
+    left: 500px;
+    top: 170px;
+    color: yellow;
+    position: relative;
+    animation: star5 1.4s;
+    font-size: 30px;
+    rotate: 10deg;
+}
+.star6{
+    left: 630px;
+    top: 200px;
+    color: yellow;
+    position: relative;
+    animation: star6 1.6s;
+    font-size: 30px;
+    rotate: 10deg;
+}
+
+@keyframes star1{
+    from{top: 500px;}
+    to{top: 150px;}
+}
+
+@keyframes star2{
+    from{top: 500px;}
+    to{top: 50px;}
+}
+@keyframes star3{
+    from{top: 500px;}
+    to{top: 190px;}
+}
+@keyframes star4{
+    from{top: 500px;}
+    to{top: 100px;}
+}
+@keyframes star5{
+    from{top: 500px;}
+    to{top: 170px;}
+}
+@keyframes star6{
+    from{top: 500px;}
+    to{top: 200px;}
+}
+
+
+
+
+.dark-mode{
+    background-color: #3b3b3b;
+    color: #fff;
+}
+.day-mode{
+    background-color: #f7f0e7;
+    color: #3b3b3b;
+}
+.stars{
+    display: none;
+}
+
